@@ -1,0 +1,35 @@
+<h1>Welcome Home</h1>
+<div class = "mdl-grid">
+	<div class = "mdl-cell--8-col mdl-cell--5-col-tablet">
+		<div class = "mdl-grid">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent homenav " ng-click = "visionClick();">VISION</button>
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent homenav" ng-click = "missionClick();"> MISSION </button>
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent homenav" ng-click = "valuesClick();">VALUES</button>
+	</div>
+		<div ng-show = "visionShow">To provide our end consumers with products of high quality at a competitive price.</div>
+		<div ng-show = "missionShow">At DIVERSE, we strive to;
+			<ul>
+				<li>Provide full product support to our customers,</li>
+				<li>Develop sustainable in-house products for the local and regional markets and,</li>
+				<li>Partner with OEMs and Product Manufacturers to supply products specially crafted for the various markets.</li>
+			</ul></div>
+		<div ng-show = "valuesShow">
+			<ol>
+				<li>Quality</li> 
+				<li>Customer Satisfaction</li> 
+				<li>Superior service</li> 
+				<li>Integrity</li> 
+				<li>Loyalty</li>
+			</ol>
+		</div>
+
+	</div>
+	<div class = "mdl-cell--4-col mdl-cell--3-col-tablet">
+		<form action="#">
+		  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    <input class="mdl-textfield__input" type="text" id="sample3">
+		    <label class="mdl-textfield__label" for="sample3">Text...</label>
+		  </div>
+		</form>
+	</div>
+</div>

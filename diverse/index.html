@@ -1,0 +1,161 @@
+<html lang="en" class="mdl-js">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Provide full product support to our customers,  Develop sustainable in-house products for the local and regional markets and, Partner with OEMs and Product Manufacturers to supply products specially crafted for the various markets.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Diverse Suppliers</title>
+
+    <!-- Add to homescreen -->
+    <link rel="manifest" href="">
+
+    <!-- Fallback to homescreen for Chrome <39 on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Diverse Suppliers">
+    <link rel="icon" sizes="192x192" href="logo.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Diverse Suppliers">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <!-- TODO: Tile icon for Win8 (144x144 + tile color) -->
+    <!-- <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png"> -->
+    <!-- <meta name="msapplication-TileColor" content="#3372DF"> -->
+
+    <meta name="theme-color" content="#263238">
+
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="material.min.css">
+	   <script src="material.min.js"></script>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="stylesheet" href="diverse.css">
+     <script src="jquery-3.2.1.min.js"></script>
+      <script src="angular.min.js"></script>
+      <script src="diverse.js"></script>
+    
+  </head>
+  <body class="components">
+    <div ng-app="homeApp" ng-controller="homeCtrl">
+    <!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <a href="" class="mdl-navigation__link" ng-click = "homeClick()"><span class="mdl-layout-title"><img src = "img/logo.jpg" alt = "Diverse Suppliers logo" title="Diverse Suppliers logo" class = "navlogo"> </span></a>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="" ng-click = "productsClick()">Products</a>
+        <a class="mdl-navigation__link" href="" ng-click = "servicesClick()">Services</a>
+        <a class="mdl-navigation__link" href="" ng-click = "aboutClick()">About</a>
+        <a class="mdl-navigation__link" href="" ng-click = "contactsClick()">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Navigation. We hide it in big screens. -->
+  <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+    <span class="mdl-layout-title" ng-click = "homeClick()">Diverse Suppliers</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="" ng-click = "productsClick()">Products</a>
+        <a class="mdl-navigation__link" href="" ng-click = "servicesClick()">Services</a>
+        <a class="mdl-navigation__link" href="" ng-click = "aboutClick()">About</a>
+        <a class="mdl-navigation__link" href="" ng-click = "contactsClick()">Contact Us</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content container">
+
+      <home ng-show = "homeShow" class="home">
+<div class = "mdl-grid">
+  <div class = "mdl-cell--8-col mdl-cell--5-col-tablet">
+    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+      <div class="mdl-tabs__tab-bar">
+          <a href="#vision" class="mdl-tabs__tab is-active">VISION</a>
+          <a href="#mission" class="mdl-tabs__tab">MISSION</a>
+          <a href="#values" class="mdl-tabs__tab">VALUES</a>
+      </div>
+
+      <div class="mdl-tabs__panel is-active" id="vision">
+        To provide our end consumers with products of high quality at a competitive price.
+      </div>
+      <div class="mdl-tabs__panel" id="mission">
+        At DIVERSE, we strive to;
+          <ul>
+            <li>Provide full product support to our customers,</li>
+            <li>Develop sustainable in-house products for the local and regional markets and,</li>
+            <li>Partner with OEMs and Product Manufacturers to supply products specially crafted for the various markets.</li>
+          </ul>
+      </div>
+      <div class="mdl-tabs__panel" id="values">
+       <ol>
+            <li>Quality</li> 
+            <li>Customer Satisfaction</li> 
+            <li>Superior service</li> 
+            <li>Integrity</li> 
+            <li>Loyalty</li>
+          </ol>
+      </div>
+    </div>
+  </div>
+  <div class = "mdl-cell--4-col mdl-cell--3-col-tablet">
+    Get in touch
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="name" required>
+        <label class="mdl-textfield__label" for="name">Your Name</label>
+      </div>
+       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="email" id="email" required>
+        <label class="mdl-textfield__label" for="email">Your Email</label>
+      </div>
+       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <textarea class="mdl-textfield__input" type="text" rows = "3" id="message" required></textarea> 
+        <label class="mdl-textfield__label" for="message">Your Message</label>
+      </div>
+      <div><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent homenav "  type = "submit">SEND</button></div>
+    </form>
+  </div>
+</div>
+
+      </home>
+      <products ng-show = "productsShow"></products>
+      <services ng-show = "servicesShow"></services>
+      <about ng-show = "aboutShow"></about>
+      <contacts ng-show = "contactsShow"></contacts>
+    </div>
+
+  </main>
+
+  <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">
+      More Information
+    </div>
+    <ul class="mdl-mini-footer__link-list">
+        <li><a class="mdl-navigation__link" href="" ng-click = "productsClick()">Products</a></li>
+        <li><a class="mdl-navigation__link" href="" ng-click = "servicesClick()">Services</a></li>
+        <li><a class="mdl-navigation__link" href="" ng-click = "aboutClick()">About</a></li>
+        <li><a class="mdl-navigation__link" href="" ng-click = "contactsClick()">Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="mdl-mini-footer__right-section">
+    <button class="mdl-mini-footer__social-btn"></button>
+    <button class="mdl-mini-footer__social-btn"></button>
+    <button class="mdl-mini-footer__social-btn"></button>
+  </div>
+  <p class="mdl-mega-footer__bottom-section">cpj and mat comps ©2017</p>
+</footer>
+
+</div>
+</div>
+</body>
+</html>
